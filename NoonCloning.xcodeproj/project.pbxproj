@@ -8,8 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		5DB330D205887E0ADF9199CD /* Pods_NoonCloning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BE524356E2073754CC417D1 /* Pods_NoonCloning.framework */; };
-		E3C1C7CF2BDDB3DD0019EF47 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C1C7CE2BDDB3DD0019EF47 /* SwiftUIView.swift */; };
+		E3C1C7CF2BDDB3DD0019EF47 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C1C7CE2BDDB3DD0019EF47 /* TabBar.swift */; };
 		E3C1C7D12BDDB5400019EF47 /* SplashScreen.json in Resources */ = {isa = PBXBuildFile; fileRef = E3C1C7D02BDDB5400019EF47 /* SplashScreen.json */; };
+		E3C1C7D42BDDC1F20019EF47 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C1C7D32BDDC1F20019EF47 /* Home.swift */; };
+		E3C1C7D72BDDC2020019EF47 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C1C7D62BDDC2020019EF47 /* Category.swift */; };
+		E3C1C7DE2BDDC5A00019EF47 /* Fashion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C1C7DD2BDDC5A00019EF47 /* Fashion.swift */; };
+		E3C1C7E02BDDC5AB0019EF47 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C1C7DF2BDDC5AB0019EF47 /* Account.swift */; };
+		E3C1C7E22BDDC5B90019EF47 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C1C7E12BDDC5B90019EF47 /* Cart.swift */; };
 		E3EAA5342BDD97430053DB54 /* NoonCloningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EAA5332BDD97430053DB54 /* NoonCloningApp.swift */; };
 		E3EAA5362BDD97430053DB54 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EAA5352BDD97430053DB54 /* ContentView.swift */; };
 		E3EAA5382BDD97460053DB54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3EAA5372BDD97460053DB54 /* Assets.xcassets */; };
@@ -21,8 +26,13 @@
 		1BE524356E2073754CC417D1 /* Pods_NoonCloning.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoonCloning.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4272AAE646290F6683998FE0 /* Pods-NoonCloning.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoonCloning.release.xcconfig"; path = "Target Support Files/Pods-NoonCloning/Pods-NoonCloning.release.xcconfig"; sourceTree = "<group>"; };
 		BC8D7D37DF6CC4F1F7F4200E /* Pods-NoonCloning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoonCloning.debug.xcconfig"; path = "Target Support Files/Pods-NoonCloning/Pods-NoonCloning.debug.xcconfig"; sourceTree = "<group>"; };
-		E3C1C7CE2BDDB3DD0019EF47 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		E3C1C7CE2BDDB3DD0019EF47 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		E3C1C7D02BDDB5400019EF47 /* SplashScreen.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SplashScreen.json; sourceTree = "<group>"; };
+		E3C1C7D32BDDC1F20019EF47 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		E3C1C7D62BDDC2020019EF47 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		E3C1C7DD2BDDC5A00019EF47 /* Fashion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fashion.swift; sourceTree = "<group>"; };
+		E3C1C7DF2BDDC5AB0019EF47 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		E3C1C7E12BDDC5B90019EF47 /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
 		E3EAA5302BDD97430053DB54 /* NoonCloning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoonCloning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3EAA5332BDD97430053DB54 /* NoonCloningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoonCloningApp.swift; sourceTree = "<group>"; };
 		E3EAA5352BDD97430053DB54 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +81,11 @@
 		E3C1C7BF2BDDA2E50019EF47 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				E3C1C7DA2BDDC21F0019EF47 /* Cart */,
+				E3C1C7D92BDDC2130019EF47 /* Account */,
+				E3C1C7D82BDDC2090019EF47 /* Fashion */,
+				E3C1C7D52BDDC1F60019EF47 /* Category */,
+				E3C1C7D22BDDC1C50019EF47 /* Home */,
 				E3C1C7CD2BDDB3CA0019EF47 /* TabBar */,
 				E3C1C7C42BDDA3320019EF47 /* SplashScreen */,
 			);
@@ -117,9 +132,49 @@
 		E3C1C7CD2BDDB3CA0019EF47 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
-				E3C1C7CE2BDDB3DD0019EF47 /* SwiftUIView.swift */,
+				E3C1C7CE2BDDB3DD0019EF47 /* TabBar.swift */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		E3C1C7D22BDDC1C50019EF47 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E3C1C7D32BDDC1F20019EF47 /* Home.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E3C1C7D52BDDC1F60019EF47 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				E3C1C7D62BDDC2020019EF47 /* Category.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		E3C1C7D82BDDC2090019EF47 /* Fashion */ = {
+			isa = PBXGroup;
+			children = (
+				E3C1C7DD2BDDC5A00019EF47 /* Fashion.swift */,
+			);
+			path = Fashion;
+			sourceTree = "<group>";
+		};
+		E3C1C7D92BDDC2130019EF47 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				E3C1C7DF2BDDC5AB0019EF47 /* Account.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		E3C1C7DA2BDDC21F0019EF47 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				E3C1C7E12BDDC5B90019EF47 /* Cart.swift */,
+			);
+			path = Cart;
 			sourceTree = "<group>";
 		};
 		E3EAA5272BDD97430053DB54 = {
@@ -285,8 +340,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3EAA5362BDD97430053DB54 /* ContentView.swift in Sources */,
+				E3C1C7D72BDDC2020019EF47 /* Category.swift in Sources */,
+				E3C1C7DE2BDDC5A00019EF47 /* Fashion.swift in Sources */,
 				E3EAA5342BDD97430053DB54 /* NoonCloningApp.swift in Sources */,
-				E3C1C7CF2BDDB3DD0019EF47 /* SwiftUIView.swift in Sources */,
+				E3C1C7D42BDDC1F20019EF47 /* Home.swift in Sources */,
+				E3C1C7CF2BDDB3DD0019EF47 /* TabBar.swift in Sources */,
+				E3C1C7E02BDDC5AB0019EF47 /* Account.swift in Sources */,
+				E3C1C7E22BDDC5B90019EF47 /* Cart.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

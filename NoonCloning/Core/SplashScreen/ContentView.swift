@@ -13,43 +13,45 @@ struct ContentView: View {
     @State var NavigateToAnotherView =  false
     var body: some View {
        
-        VStack{
-            NavigationStack{
-                VStack{
-                    HStack{
-                        Spacer()
-                        Button("Skip Intro"){
-                            NavigateToAnotherView.toggle()
-                        }
+         
+                NavigationStack{
+                    VStack{
+                        HStack{
+                            Spacer()
+                            Button("Skip Intro"){
+                                NavigateToAnotherView.toggle()
+                            }
                             .foregroundColor(.gray)
                             
-                    }.padding()
-                    HStack{
-                        LottieView(animation: .named("SplashScreen"))
-                            .configuration(LottieConfiguration(renderingEngine: .mainThread))
-                            .playing()
-                            .onAppear{
-                                Timer.scheduledTimer(withTimeInterval: 70, repeats: false){_ in
-                                    NavigateToAnotherView.toggle()
+                        }.padding()
+                        HStack{
+                            LottieView(animation: .named("SplashScreen"))
+                                .configuration(LottieConfiguration(renderingEngine: .mainThread))
+                                .playing()
+                                .onAppear{
+                                    Timer.scheduledTimer(withTimeInterval: 3, repeats: false){_ in
+                                        NavigateToAnotherView.toggle()
+                                        
+                                        UIApplication.shared.windows.first?.rootViewController = UIHostingController(rootView: TabBar())
+                                    }
                                     
-                                    UIApplication.shared.windows.first?.rootViewController = UIHostingController(rootView: SwiftUIView())
+                                }.navigationDestination(isPresented: $NavigateToAnotherView) {
+                                    TabBar().navigationBarBackButtonHidden()
                                 }
-                                
-                            }.navigationDestination(isPresented: $NavigateToAnotherView) {
-                                SwiftUIView().navigationBarBackButtonHidden()
-                            }
+                            
+                        }
                         
-                    }
+                    }.background(Color("backColor").edgesIgnoringSafeArea(.all))
                     
                 }
-                .background(Color("backColor"))
+                
+                
             }
-           
-        }
-       
-        .padding()
-        .background(Color("backColor"))
-    }
+            
+          
+            
+        
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
