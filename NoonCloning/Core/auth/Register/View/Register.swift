@@ -22,6 +22,7 @@ struct Register: View {
     
     @State var OPT : String = ""
     var body: some View {
+        
         VStack(spacing:40){
             
             VStack{
@@ -73,8 +74,11 @@ struct Register: View {
                     .foregroundColor(.gray)
             }
         }
+            
            // Spacer()
+            
         }
+        
     }
     
     private func otpText(text: String) -> some View {

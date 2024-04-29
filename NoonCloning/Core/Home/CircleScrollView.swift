@@ -50,7 +50,7 @@ struct CircleScrollView: View {
                         }
                     }
                     
-                }.frame(width: width, height: 350)
+                }.frame(width: width - 30, height: 350)
             }
             .padding()
         }

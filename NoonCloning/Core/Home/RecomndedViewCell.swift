@@ -12,9 +12,9 @@ struct RecomndedViewCell: View {
     let width =  UIScreen.main.bounds.width
     var body: some View {
         NavigationView {
-            ScrollView(.horizontal, showsIndicators: false) {
+         
                 VStack(alignment: .leading, spacing: 10) {
-                    ForEach(0..<2) { row in
+                  
                         ScrollView(.horizontal, showsIndicators: false) {
                             HStack(spacing: 10) {
                                 ForEach(0..<items.count) { index in
@@ -25,7 +25,7 @@ struct RecomndedViewCell: View {
                                                 Image("egypt")
                                                     .resizable()
                                                     .scaledToFit()
-                                                    .frame(width: 100, height: 130)
+                                                    .frame(width: 220, height: 250)
                                                     .clipped()
                                                     .cornerRadius(10)
                                                     .background(Color("lightGray"))
@@ -42,7 +42,7 @@ struct RecomndedViewCell: View {
                                                         .clipped()
                                                         .frame(width: 20 ,height: 20)
                                                         .foregroundColor(.black)
-                                                        .offset(x: 30, y: -50)
+                                                        .offset(x: 80, y: -90)
                                                 }
                                                 
                                                 
@@ -54,20 +54,20 @@ struct RecomndedViewCell: View {
                                                         .clipped()
                                                         .frame(width: 20 ,height: 20)
                                                         .foregroundColor(.black)
-                                                        .offset(x: 30, y: 40)
+                                                        .offset(x: 80, y: 90)
                                                 }
                                                 
                                                 HStack{
                                                     HStack{
                                                         Text("4.3")
-                                                            .font(.system(size: 7))
+                                                            .font(.system(size: 15))
                                                         Image(systemName: "star.fill")
                                                             .resizable()
                                                             .frame(width: 7, height: 7)
                                                     }
                                                     Text("5.2K")
-                                                        .font(.system(size: 7))
-                                                } .offset(x:-17, y: 45)
+                                                        .font(.system(size: 15))
+                                                } .offset(x:-60, y: 90)
                                                 
                                             }
                                             .offset(x: 0, y: 9)
@@ -75,23 +75,23 @@ struct RecomndedViewCell: View {
                                             
                                             VStack(alignment:.leading){
                                                 Text("product name and briefin two line into two rows  ")
-                                                    .font(.system(size: 5))
+                                                    .font(.system(size: 15))
                                                     .lineLimit(nil)
                                                     .fontWeight(.regular)
                                                 HStack{
                                                     Text("EGP ")
-                                                        .font(.system(size: 5))
+                                                        .font(.system(size: 15))
                                                         .fontWeight(.regular)
                                                         .lineLimit(nil)
                                                     Text("10,500")
-                                                        .font(.system(size: 5))
+                                                        .font(.system(size: 15))
                                                         .lineLimit(nil)
                                                         .fontWeight(.regular)
                                                 }
-                                            } .frame(width: 120,height: 30)
+                                            } .frame(width: 250,height: 80)
                                                
                                             Spacer()
-                                        }.frame(height: 180)
+                                        }.frame( height: 350)
                                             .foregroundColor(Color.black)
                                         
                                             .background(.white)
@@ -102,13 +102,14 @@ struct RecomndedViewCell: View {
                                     }
                                 }
                                 
-                            }
+                            
                             
                         }
+                            .padding()
                         
-                        
-                    }
                     
+                    
+                
                 }
                 
             }

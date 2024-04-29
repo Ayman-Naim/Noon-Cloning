@@ -29,7 +29,7 @@ struct ContentView: View {
                                 .configuration(LottieConfiguration(renderingEngine: .mainThread))
                                 .playing()
                                 .onAppear{
-                                    Timer.scheduledTimer(withTimeInterval: 3, repeats: false){_ in
+                                    Timer.scheduledTimer(withTimeInterval: 2.8, repeats: false){_ in
                                         NavigateToAnotherView.toggle()
                                         let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene
                                         if let window = windowScene?.windows.first {

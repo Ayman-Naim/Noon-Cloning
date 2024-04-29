@@ -88,7 +88,9 @@ struct Home: View {
                     VStack{
                         CircleScrollView()
                     }.frame(width: width, height: 250)
-                        .padding()
+                      
+                        
+                        
                     VStack{
                         Image("egypt")
                             .resizable()
@@ -100,18 +102,34 @@ struct Home: View {
                                     .stroke(Color.black , lineWidth: 1)
                             )
                     }
-                        .padding(5)
+                        .padding(10)
                     VStack(alignment:.leading,spacing: 15){
                         HStack{
                             Text("Recommended For You")
                                 .font(.headline)
                                 .fontWeight(.regular)
-                               Spacer()
+                               
                         }.padding(.leading, 20)
-                        RecomndedViewCell().padding()
+                        RecomndedViewCell()  .frame( height: 400)
                             
                     }
-                    Spacer()
+                    
+                  
+                 
+                 
+                    VStack(alignment:.leading){
+                       
+                        HStack{
+                            Text("any section Title")
+                                .font(.headline)
+                                .fontWeight(.regular)
+                           
+                        }.padding(.leading,20)
+                        CircleScrollView()
+                        .frame(width: width, height: 280)
+                            
+                            
+                    }
                     
                 }
                 
