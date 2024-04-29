@@ -55,7 +55,7 @@ struct Account: View {
                             .font(.footnote)
                             .fontWeight(.light)
                         HStack {
-                        NavigationLink(destination: Auth()) {
+                            NavigationLink(destination: Auth() .toolbar(.hidden, for: .tabBar)) {
 
                                     HStack(){
                                         ZStack{
@@ -252,7 +252,7 @@ struct Account: View {
             PickerSelcect(selcectedOption: $country)
                 .presentationDetents([.medium])
         }
-           
+        .tint(.black)
            
         
     }

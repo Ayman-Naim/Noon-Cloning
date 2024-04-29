@@ -47,6 +47,7 @@ struct Home: View {
                         Text("19-37 - Nile corniche - old cairosdfsdf ")
                         Button{}label: {
                             Image(systemName: "chevron.down")
+                                .foregroundColor(.black)
                         }
                         
                         

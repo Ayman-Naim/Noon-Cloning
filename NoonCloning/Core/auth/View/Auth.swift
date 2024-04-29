@@ -65,7 +65,7 @@ struct Auth: View {
                                              
                                 if authSelection == .login{
                                     
-                                    NavigationLink(destination:Register(email: viewModel.email)) {
+                                    NavigationLink(destination:Register(email: viewModel.email).toolbar(.hidden, for: .tabBar)) {
                                         HStack {
                                             Text("CONTINUE")
                                             //  .fontWeight(.regular)
@@ -79,7 +79,7 @@ struct Auth: View {
                                             .allowsHitTesting(viewModel.email.isEmpty && !invalidEmail ? false:true)
                                     }
                                 }else{
-                                    NavigationLink(destination: Register(email: viewModel.email)) {
+                                    NavigationLink(destination: Register(email: viewModel.email).toolbar(.hidden, for: .tabBar)) {
                                         HStack {
                                             Text("CONTINUE")
                                             //  .fontWeight(.regular)
@@ -108,7 +108,7 @@ struct Auth: View {
                 Spacer()
                 
                 
-            }
+        }
             .onReceive(viewModel.$email, perform: { _ in
                 if !viewModel.isValidEmail{
                     self.invalidEmail = true
