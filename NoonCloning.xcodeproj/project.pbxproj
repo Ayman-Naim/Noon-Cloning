@@ -14,6 +14,9 @@
 		E30943662BDF37B1006D02D7 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30943652BDF37B1006D02D7 /* Register.swift */; };
 		E30943682BDF43CB006D02D7 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30943672BDF43CB006D02D7 /* ViewModel.swift */; };
 		E309436D2BDF4B8A006D02D7 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E309436C2BDF4B8A006D02D7 /* AuthViewModel.swift */; };
+		E30943712BDF713F006D02D7 /* MovingPanerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30943702BDF713F006D02D7 /* MovingPanerView.swift */; };
+		E30943742BDF86C3006D02D7 /* CircleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30943732BDF86C3006D02D7 /* CircleScrollView.swift */; };
+		E30943772BDF907D006D02D7 /* RecomndedViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30943762BDF907D006D02D7 /* RecomndedViewCell.swift */; };
 		E3C1C7CF2BDDB3DD0019EF47 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C1C7CE2BDDB3DD0019EF47 /* TabBar.swift */; };
 		E3C1C7D12BDDB5400019EF47 /* SplashScreen.json in Resources */ = {isa = PBXBuildFile; fileRef = E3C1C7D02BDDB5400019EF47 /* SplashScreen.json */; };
 		E3C1C7D42BDDC1F20019EF47 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C1C7D32BDDC1F20019EF47 /* Home.swift */; };
@@ -38,6 +41,9 @@
 		E30943652BDF37B1006D02D7 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		E30943672BDF43CB006D02D7 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		E309436C2BDF4B8A006D02D7 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		E30943702BDF713F006D02D7 /* MovingPanerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovingPanerView.swift; sourceTree = "<group>"; };
+		E30943732BDF86C3006D02D7 /* CircleScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleScrollView.swift; sourceTree = "<group>"; };
+		E30943762BDF907D006D02D7 /* RecomndedViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecomndedViewCell.swift; sourceTree = "<group>"; };
 		E3C1C7CE2BDDB3DD0019EF47 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		E3C1C7D02BDDB5400019EF47 /* SplashScreen.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SplashScreen.json; sourceTree = "<group>"; };
 		E3C1C7D32BDDC1F20019EF47 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -230,6 +236,9 @@
 			isa = PBXGroup;
 			children = (
 				E3C1C7D32BDDC1F20019EF47 /* Home.swift */,
+				E30943702BDF713F006D02D7 /* MovingPanerView.swift */,
+				E30943732BDF86C3006D02D7 /* CircleScrollView.swift */,
+				E30943762BDF907D006D02D7 /* RecomndedViewCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -436,12 +445,15 @@
 				E3EAA5342BDD97430053DB54 /* NoonCloningApp.swift in Sources */,
 				E3C1C7D42BDDC1F20019EF47 /* Home.swift in Sources */,
 				E30943682BDF43CB006D02D7 /* ViewModel.swift in Sources */,
+				E30943772BDF907D006D02D7 /* RecomndedViewCell.swift in Sources */,
 				E30943602BDF1AC4006D02D7 /* Auth.swift in Sources */,
 				E3C1C7CF2BDDB3DD0019EF47 /* TabBar.swift in Sources */,
 				E309435C2BDEFDBD006D02D7 /* CountrySelcect.swift in Sources */,
 				E309436D2BDF4B8A006D02D7 /* AuthViewModel.swift in Sources */,
 				E3C1C7E02BDDC5AB0019EF47 /* Account.swift in Sources */,
 				E30943632BDF378E006D02D7 /* Login.swift in Sources */,
+				E30943742BDF86C3006D02D7 /* CircleScrollView.swift in Sources */,
+				E30943712BDF713F006D02D7 /* MovingPanerView.swift in Sources */,
 				E3C1C7E22BDDC5B90019EF47 /* Cart.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
