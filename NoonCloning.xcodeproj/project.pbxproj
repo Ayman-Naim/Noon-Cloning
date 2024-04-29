@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		5DB330D205887E0ADF9199CD /* Pods_NoonCloning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BE524356E2073754CC417D1 /* Pods_NoonCloning.framework */; };
+		E309435C2BDEFDBD006D02D7 /* CountrySelcect.swift in Sources */ = {isa = PBXBuildFile; fileRef = E309435B2BDEFDBD006D02D7 /* CountrySelcect.swift */; };
+		E30943602BDF1AC4006D02D7 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = E309435F2BDF1AC4006D02D7 /* Auth.swift */; };
+		E30943632BDF378E006D02D7 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30943622BDF378E006D02D7 /* Login.swift */; };
+		E30943662BDF37B1006D02D7 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30943652BDF37B1006D02D7 /* Register.swift */; };
+		E30943682BDF43CB006D02D7 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30943672BDF43CB006D02D7 /* ViewModel.swift */; };
+		E309436D2BDF4B8A006D02D7 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E309436C2BDF4B8A006D02D7 /* AuthViewModel.swift */; };
 		E3C1C7CF2BDDB3DD0019EF47 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C1C7CE2BDDB3DD0019EF47 /* TabBar.swift */; };
 		E3C1C7D12BDDB5400019EF47 /* SplashScreen.json in Resources */ = {isa = PBXBuildFile; fileRef = E3C1C7D02BDDB5400019EF47 /* SplashScreen.json */; };
 		E3C1C7D42BDDC1F20019EF47 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C1C7D32BDDC1F20019EF47 /* Home.swift */; };
@@ -26,6 +32,12 @@
 		1BE524356E2073754CC417D1 /* Pods_NoonCloning.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoonCloning.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4272AAE646290F6683998FE0 /* Pods-NoonCloning.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoonCloning.release.xcconfig"; path = "Target Support Files/Pods-NoonCloning/Pods-NoonCloning.release.xcconfig"; sourceTree = "<group>"; };
 		BC8D7D37DF6CC4F1F7F4200E /* Pods-NoonCloning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoonCloning.debug.xcconfig"; path = "Target Support Files/Pods-NoonCloning/Pods-NoonCloning.debug.xcconfig"; sourceTree = "<group>"; };
+		E309435B2BDEFDBD006D02D7 /* CountrySelcect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountrySelcect.swift; sourceTree = "<group>"; };
+		E309435F2BDF1AC4006D02D7 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		E30943622BDF378E006D02D7 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		E30943652BDF37B1006D02D7 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		E30943672BDF43CB006D02D7 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		E309436C2BDF4B8A006D02D7 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		E3C1C7CE2BDDB3DD0019EF47 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		E3C1C7D02BDDB5400019EF47 /* SplashScreen.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SplashScreen.json; sourceTree = "<group>"; };
 		E3C1C7D32BDDC1F20019EF47 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -70,6 +82,82 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E30943592BDEFD9A006D02D7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E3C1C7DF2BDDC5AB0019EF47 /* Account.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E309435A2BDEFDA2006D02D7 /* CountryselectView */ = {
+			isa = PBXGroup;
+			children = (
+				E309435B2BDEFDBD006D02D7 /* CountrySelcect.swift */,
+			);
+			path = CountryselectView;
+			sourceTree = "<group>";
+		};
+		E309435D2BDF1AA5006D02D7 /* auth */ = {
+			isa = PBXGroup;
+			children = (
+				E309436B2BDF4B58006D02D7 /* ViewModel */,
+				E30943612BDF3776006D02D7 /* View */,
+				E30943642BDF3794006D02D7 /* Register */,
+				E309435E2BDF1AAA006D02D7 /* Login */,
+			);
+			path = auth;
+			sourceTree = "<group>";
+		};
+		E309435E2BDF1AAA006D02D7 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E30943622BDF378E006D02D7 /* Login.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		E30943612BDF3776006D02D7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E309435F2BDF1AC4006D02D7 /* Auth.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E30943642BDF3794006D02D7 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				E309436A2BDF4B4C006D02D7 /* View */,
+				E30943692BDF4B39006D02D7 /* ViewModel */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		E30943692BDF4B39006D02D7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E30943672BDF43CB006D02D7 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E309436A2BDF4B4C006D02D7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E30943652BDF37B1006D02D7 /* Register.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E309436B2BDF4B58006D02D7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E309436C2BDF4B8A006D02D7 /* AuthViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		E3C1C7BE2BDDA2DE0019EF47 /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +169,7 @@
 		E3C1C7BF2BDDA2E50019EF47 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				E309435D2BDF1AA5006D02D7 /* auth */,
 				E3C1C7DA2BDDC21F0019EF47 /* Cart */,
 				E3C1C7D92BDDC2130019EF47 /* Account */,
 				E3C1C7D82BDDC2090019EF47 /* Fashion */,
@@ -164,7 +253,8 @@
 		E3C1C7D92BDDC2130019EF47 /* Account */ = {
 			isa = PBXGroup;
 			children = (
-				E3C1C7DF2BDDC5AB0019EF47 /* Account.swift */,
+				E30943592BDEFD9A006D02D7 /* View */,
+				E309435A2BDEFDA2006D02D7 /* CountryselectView */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -341,11 +431,17 @@
 			files = (
 				E3EAA5362BDD97430053DB54 /* ContentView.swift in Sources */,
 				E3C1C7D72BDDC2020019EF47 /* Category.swift in Sources */,
+				E30943662BDF37B1006D02D7 /* Register.swift in Sources */,
 				E3C1C7DE2BDDC5A00019EF47 /* Fashion.swift in Sources */,
 				E3EAA5342BDD97430053DB54 /* NoonCloningApp.swift in Sources */,
 				E3C1C7D42BDDC1F20019EF47 /* Home.swift in Sources */,
+				E30943682BDF43CB006D02D7 /* ViewModel.swift in Sources */,
+				E30943602BDF1AC4006D02D7 /* Auth.swift in Sources */,
 				E3C1C7CF2BDDB3DD0019EF47 /* TabBar.swift in Sources */,
+				E309435C2BDEFDBD006D02D7 /* CountrySelcect.swift in Sources */,
+				E309436D2BDF4B8A006D02D7 /* AuthViewModel.swift in Sources */,
 				E3C1C7E02BDDC5AB0019EF47 /* Account.swift in Sources */,
+				E30943632BDF378E006D02D7 /* Login.swift in Sources */,
 				E3C1C7E22BDDC5B90019EF47 /* Cart.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

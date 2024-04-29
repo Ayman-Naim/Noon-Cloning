@@ -31,8 +31,13 @@ struct ContentView: View {
                                 .onAppear{
                                     Timer.scheduledTimer(withTimeInterval: 3, repeats: false){_ in
                                         NavigateToAnotherView.toggle()
-                                        
-                                        UIApplication.shared.windows.first?.rootViewController = UIHostingController(rootView: TabBar())
+                                        let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene
+                                        if let window = windowScene?.windows.first {
+                                            window.rootViewController = UIHostingController(rootView: TabBar())
+                                                   window.makeKeyAndVisible()
+                                        } 
+                                      /*  UIApplication.shared.windows.first?.rootViewController = UIHostingController(rootView: TabBar())
+                                       */
                                     }
                                     
                                 }.navigationDestination(isPresented: $NavigateToAnotherView) {
